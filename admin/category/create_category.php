@@ -1,22 +1,17 @@
 <?php
-// include database and object files
 include_once '../../config/database.php';
 include_once '../../models/category.php';
 
-// get database connection
 $database = new Database();
 $db = $database->getConnection();
 
-// pass connection to objects
 $category = new Category($db);
 
-
-// set page headers
 $page_title = "Create Category";
 include_once "../header.php";
 
 echo "<div class='right-button-margin'>";
-echo "<a href='index.php' class='btn btn-default pull-right'>View Categories</a>";
+echo "<a href='category.php' class='btn btn-default pull-right'>View Categories</a>";
 echo "</div>";
 
 ?>
