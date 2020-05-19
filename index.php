@@ -11,30 +11,10 @@
 <script src="js/handling.js"></script>
 </head>
 <body style="text-align:center;">
-<div class="wrapper row1">
-  <header id="header" class="clear">
-    <div id="hgroup">
-      <h1><a href="index.html">App Magic</a></h1>
-    </div>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Search:</legend>
-        <input type="text" value="Enter a search term" onFocus="this.value=(this.value=='Enter a search term')? '' : this.value ;">
-        <input type="submit" id="sf_submit" value="submit">
-      </fieldset>
-    </form>
-    <nav>
-      <ul>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.php">Login</a></li>
 
-      </ul>
-    </nav>
-  </header>
-</div>
+<?php  include_once "header.php"?>
+
+
 <div id="div1" class="wrapper row2">
   <div id="container" class="clear">
     <section id="section" class="clear">

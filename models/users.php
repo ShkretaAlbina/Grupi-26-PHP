@@ -54,10 +54,16 @@ class User {
         $query = "SELECT *
     FROM
         " . $this->table_name . "
-    WHERE email='$email' AND password='$password'
+    WHERE email=:email AND password=:password
     ";
 
     $stmt = $this->conn->prepare( $query );
+
+    $stmt->bindParam(":email", $email);
+    $stmt->bindParam(":password", $password);
+
+
+
     $stmt->execute();
         
     $user = $stmt->fetch(PDO::FETCH_ASSOC);

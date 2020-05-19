@@ -44,7 +44,6 @@
         <li class="<?php  echo $page_name == "product" ? "active": "" ?>"><a href="../product/product.php">Products</a></li>
         <li class="<?php  echo $page_name == "category" ? "active": "" ?>"><a href="../category/category.php">Categories</a></li>
         <li><a href="../logout.php">Logout</a></li>
-        <li><a href="#">Users</a></li>  
     </ul>
     </div>
   </div>
